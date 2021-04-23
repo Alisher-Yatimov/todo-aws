@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +17,91 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active-nav-link {
+  background: #007bff;
+  border-radius: 5px;
+}
+.nav-link {
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-form > .form-group {
+  width: 60%;
+  align-self: center;
+}
+
+.user-form button {
+  width: 30%;
+  align-self: center;
+}
+
+.todo-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 0 !important;
+}
+
+.todo-card {
+  margin-top: 1rem;
+  box-shadow: 0 0 5px #ccc;
+  padding: 0 1rem;
+}
+.todo-card {
+  flex-direction: row !important;
+  align-items: center;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10rem !important;
+}
+
+.toast {
+  position: absolute !important;
+  top: 70px;
+  right: 25px;
+}
+
+.confirm-form {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+  width: 500px;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+.confirm-form button {
+  align-self: center;
+}
+
+.todo-msg {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 5rem;
 }
